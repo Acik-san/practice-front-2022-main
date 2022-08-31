@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import styles from './Header.module.sass';
 import CONSTANTS from '../../constants';
-import { getUserAction, clearUserStore, headerRequest } from '../../actions/actionCreator';
+import { clearUserStore, headerRequest } from '../../actions/actionCreator';
 import Logo from '../Logo';
 
 class Header extends React.Component {
@@ -100,6 +100,7 @@ class Header extends React.Component {
             <div className={styles.leftNav}>
               <div className={styles.nav}>
                 <ul>
+                  <li><Link to="/pricing">Pricing</Link></li>
                   <li>
                     <span>NAME IDEAS</span>
                     <img
