@@ -5,6 +5,8 @@ const CONSTANTS = {
   CONTACTS: {
     PHONE: '(877) 355-3585',
   },
+  PATH: { DASHBOARD: '/dashboard' },
+  BUTTON_NAME: { DASHBOARD: 'dashboard' },
   CUSTOMER: 'customer',
   CREATOR: 'creator',
   CONTEST_STATUS_ACTIVE: 'active',
