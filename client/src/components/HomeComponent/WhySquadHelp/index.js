@@ -1,6 +1,6 @@
 import React from 'react';
 import CONSTANTS from '../../../constants';
-import styles from '../../../pages/Home/Home.module.sass';
+import styles from './WhySquadHelp.module.scss';
 import data from './whySquadHelp.json';
 
 const WhySquadHelp = () => {
