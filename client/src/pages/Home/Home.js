@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Header from '../../components/Header/Header';
 import CONSTANTS from '../../constants';
@@ -10,6 +9,7 @@ import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import WhySquadHelp from '../../components/HomeComponent/WhySquadHelp';
 import Button from '../../components/Button';
+import Sponsors from '../../components/HomeComponent/Sponsors';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -63,54 +63,7 @@ const Home = (props) => {
               />
             </div>
             <WhySquadHelp />
-            <div className={styles.greyContainer}>
-              <div className={styles.adv}>
-                <div className={styles.images}>
-                  <img
-                    src={`${CONSTANTS.STATIC_IMAGES_PATH}sponsors/Forbes-inactive.png`}
-                    alt="forbes"
-                  />
-                  <img
-                    src={`${CONSTANTS.STATIC_IMAGES_PATH}sponsors/Forbes-active.png`}
-                    alt="forbes"
-                  />
-                </div>
-                <div className={styles.images}>
-                  <img
-                    src={`${CONSTANTS.STATIC_IMAGES_PATH}sponsors/the_next_web_inactive.png`}
-                    alt="web"
-                  />
-                  <img
-                    src={`${CONSTANTS.STATIC_IMAGES_PATH}sponsors/the_next_web_active.png`}
-                    alt="web"
-                  />
-                </div>
-                <div className={styles.images}>
-                  <img
-                    src={`${CONSTANTS.STATIC_IMAGES_PATH}sponsors/mashable-inactive.png`}
-                    alt="mashable"
-                  />
-                  <img
-                    src={`${CONSTANTS.STATIC_IMAGES_PATH}sponsors/mashable-active.png`}
-                    alt="mashable"
-                  />
-                </div>
-              </div>
-              <div className={styles.stats}>
-                <div>
-                  <p>119,525</p>
-                  <span>Creatives</span>
-                </div>
-                <div>
-                  <p>21,875</p>
-                  <span>Customers</span>
-                </div>
-                <div>
-                  <p>85</p>
-                  <span>Industries</span>
-                </div>
-              </div>
-            </div>
+            <Sponsors />
             <h2>How Do Name Contest Work?</h2>
             <div className={styles.whiteContainer}>
               <div className={styles.stepReverse}>
