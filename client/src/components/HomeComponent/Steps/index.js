@@ -9,9 +9,10 @@ const Steps = () => {
   const greyContainerStep = [styles.greyContainer,styles.stepReverse]
   return (
     <>
-      <Step data={data[0]} className={whiteContainerStep} />
-      <Step data={data[1]} className={greenContainerStep}/>
-      <Step data={data[2]} className={greyContainerStep}/>
+      <h2>{data[0].h2}</h2>
+      <Step data={data[1]} className={whiteContainerStep} />
+      <Step data={data[2]} className={greenContainerStep}/>
+      <Step data={data[3]} className={greyContainerStep}/>
     </>
   );
 };

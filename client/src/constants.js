@@ -35,6 +35,10 @@ const CONSTANTS = {
   CREATE_NEW_CATALOG_AND_ADD_CHAT: 'CREATE_NEW_CATALOG_AND_ADD_CHAT',
   USER_INFO_MODE: 'USER_INFO_MODE',
   CASHOUT_MODE: 'CASHOUT_MODE',
+  HEADER_TEXT: {
+    HEADING: 'Find the Perfect Name for',
+    TEXT: 'Launch a naming contest to engage hundreds of naming experts as you’re guided through our agency-level naming process. Or, explore our hand-picked collection of premium names available for immediate purchase',
+  },
   HEADER_ANIMATION_TEXT: [
     'a Company',
     'a Brand',

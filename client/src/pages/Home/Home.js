@@ -11,22 +11,19 @@ import WhySquadHelp from '../../components/HomeComponent/WhySquadHelp';
 import Button from '../../components/Button';
 import Sponsors from '../../components/HomeComponent/Sponsors';
 import Steps from '../../components/HomeComponent/Steps';
+import HomeHeading from '../../components/HomeComponent/HomeHeading';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
-  const [styleName, setStyle] = useState(styles.headline__static);
-  let timeout;
 
   useEffect(() => {
-    timeout = setInterval(() => {
+    const timeout = setInterval(() => {
       setIndex(index + 1);
-      setStyle(styles.headline__isloading);
     }, 3000);
     return () => {
-      setStyle(styles.headline__static);
       clearInterval(timeout);
     };
-  });
+  }, [index]);
 
   const { isFetching } = props;
   const text =
@@ -41,22 +38,7 @@ const Home = (props) => {
       ) : (
         <>
           <div className={styles.container}>
-            <div className={styles.headerBar}>
-              <div className={styles.headline}>
-                <span>Find the Perfect Name for</span>
-                <span className={styleName}>{text}</span>
-              </div>
-              <p>
-                Launch a naming contest to engage hundreds of naming experts as
-                you’re guided through our agency-level naming process. Or,
-                explore our hand-picked collection of premium names available
-                for immediate purchase
-              </p>
-              <Button
-                name={CONSTANTS.BUTTON_NAME.DASHBOARD}
-                path={CONSTANTS.PATH.DASHBOARD}
-              />
-            </div>
+            <HomeHeading text={text} />
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}
@@ -65,7 +47,6 @@ const Home = (props) => {
             </div>
             <WhySquadHelp />
             <Sponsors />
-            <h2>How Do Name Contest Work?</h2>
             <Steps />
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
