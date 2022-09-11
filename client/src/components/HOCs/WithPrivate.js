@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import { getUserAction } from '../../actions/actionCreator';
 import Spinner from '../Spinner/Spinner';
 
-const PrivateHoc = (Component, props) => {
+const WithPrivate = (Component, props) => {
   const mapStateToProps = (state) => state.userStore;
 
   const mapDispatchToProps = (dispatch) => ({
@@ -18,14 +18,20 @@ const PrivateHoc = (Component, props) => {
       }
     }
 
-    
     render() {
       if (this.props.error) return <Redirect to="/" />;
 
       return (
         <>
-          {this.props.isFetching ? <Spinner mtop />
-            : <Component history={this.props.history} match={this.props.match} {...props} />}
+          {this.props.isFetching ? (
+            <Spinner mtop />
+          ) : (
+            <Component
+              history={this.props.history}
+              match={this.props.match}
+              {...props}
+            />
+          )}
         </>
       );
     }
@@ -34,4 +40,4 @@ const PrivateHoc = (Component, props) => {
   return connect(mapStateToProps, mapDispatchToProps)(Hoc);
 };
 
-export default PrivateHoc;
+export default WithPrivate;

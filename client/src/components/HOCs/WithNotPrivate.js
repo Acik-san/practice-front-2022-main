@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { onlyForNotAuthorize } from '../../actions/actionCreator';
 import Spinner from '../Spinner/Spinner';
 
-const OnlyNotAuthorizedUserHoc = (Component) => {
+const WithNotPrivate = (Component) => {
   const mapStateToProps = (state) => state.userStore;
 
   const mapDispatchToProps = (dispatch) => ({
@@ -18,7 +18,8 @@ const OnlyNotAuthorizedUserHoc = (Component) => {
     render() {
       if (this.props.isFetching) {
         return <Spinner mtop />;
-      } if (!this.props.data) {
+      }
+      if (!this.props.data) {
         return <Component history={this.props.history} />;
       }
       return null;
@@ -28,4 +29,4 @@ const OnlyNotAuthorizedUserHoc = (Component) => {
   return connect(mapStateToProps, mapDispatchToProps)(HocForLoginSignUp);
 };
 
-export default OnlyNotAuthorizedUserHoc;
+export default WithNotPrivate;
