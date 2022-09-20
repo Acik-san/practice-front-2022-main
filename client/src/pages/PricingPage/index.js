@@ -1,9 +1,9 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
-import PricingPackages from './PricingPackages';
+import PricingPackages from '../../components/PricingComponents/PricingPackages';
 
-const PricingPage = () => {
+const PricingPage = (props) => {
   return (
     <>
       <Header />

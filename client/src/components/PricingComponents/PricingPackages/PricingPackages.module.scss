@@ -1,0 +1,36 @@
+.section {
+  max-height: 1709px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container {
+  max-height: 1651px;
+  background-color: #f8f8f8;
+  padding-top: 25px;
+}
+.flex {
+  // width: 800px;
+  max-height: 1626px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    height: 896px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .container {
+    height: 836px;
+    background-color: #f8f8f8;
+    padding-top: 25px;
+  }
+  .flex {
+    width: 800px;
+    height: 663px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+}
