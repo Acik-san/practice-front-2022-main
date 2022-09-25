@@ -36,17 +36,12 @@
     }
 
     &:hover {
-      img {
-        max-height: 40px;
-        cursor: pointer;
+      img:first-child {
+        display: none;
+      }
 
-        img:first-child {
-          display: none;
-        }
-
-        img:last-child {
-          display: block;
-        }
+      img:last-child {
+        display: block;
       }
     }
 

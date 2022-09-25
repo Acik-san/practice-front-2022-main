@@ -1,0 +1,31 @@
+{
+  "head": "managed contests",
+  "heading": "A Naming Agency Experience (minus the Agency-level price tag)",
+  "headingInformation": "Our hybrid-solution partners you with a trained Squadhelp branding consultant who will guide your crowdsourcing process step-by-step to get the best results possible.",
+  "blocks": [
+    {
+      "id": 1,
+      "img": "https://www.squadhelp.com/resources/assets/svg/icons/icon-46.svg",
+      "h3": "Consultant led",
+      "p": "Work one-on-one with a Squadhelp branding consultant."
+    },
+    {
+      "id": 2,
+      "img": "https://www.squadhelp.com/resources/assets/svg/icons/icon-7.svg",
+      "h3": "Crowd powered",
+      "p": "Work with our top rated Creatives and receive a huge breadth of ideas."
+    },
+    {
+      "id": 3,
+      "img": "https://www.squadhelp.com/resources/assets/svg/icons/icon-2.svg",
+      "h3": "Trademark Reports",
+      "p": "Comprehensive trademark screening on your shortlisted names."
+    },
+    {
+      "id": 4,
+      "img": "https://www.squadhelp.com/resources/assets/svg/icons/icon-58.svg",
+      "h3": " Audience testing",
+      "p": "Get rapid feedback from real people on your shortlist of business names."
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import Sponsors from '../../components/HomeComponent/Sponsors';
 import Steps from '../../components/HomeComponent/Steps';
 import HomeHeading from '../../components/HomeComponent/HomeHeading';
 import Headline from '../../components/HomeComponent/Headline';
+import ManagedContests from '../../components/HomeComponent/ManagedContests';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -67,6 +68,7 @@ const Home = (props) => {
                 carouselType={carouselConstants.FEEDBACK_SLIDER}
               />
             </div>
+            <ManagedContests />
           </div>
           <Footer />
         </>

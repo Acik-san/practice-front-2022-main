@@ -5,3 +5,11 @@
   cursor: pointer;
   background-color: transparent;
 }
+%row_overflow {
+  $rows: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: $rows;
+  -webkit-box-orient: vertical;
+  max-height: calc(2rem * 3);
+  overflow: hidden;
+}

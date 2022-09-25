@@ -100,7 +100,7 @@ class Header extends React.Component {
             <div className={styles.leftNav}>
               <div className={styles.nav}>
                 <ul>
-                  <li><Link to="/pricing">Pricing</Link></li>
+                  <li><Link to="/pricing" className={styles.pricing_link}>Pricing</Link></li>
                   <li>
                     <span>NAME IDEAS</span>
                     <img
