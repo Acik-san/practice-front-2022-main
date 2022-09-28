@@ -5,11 +5,27 @@
   cursor: pointer;
   background-color: transparent;
 }
-%row_overflow {
+%row_overflow_1 {
+  $rows: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: $rows;
+  -webkit-box-orient: vertical;
+  max-height: calc(2.2rem * 1);
+  overflow: hidden;
+}
+%row_overflow_2 {
+  $rows: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: $rows;
+  -webkit-box-orient: vertical;
+  max-height: calc(2.2rem * 2);
+  overflow: hidden;
+}
+%row_overflow_3 {
   $rows: 3;
   display: -webkit-box;
   -webkit-line-clamp: $rows;
   -webkit-box-orient: vertical;
-  max-height: calc(2rem * 3);
+  max-height: calc(2.2rem * 3);
   overflow: hidden;
 }
