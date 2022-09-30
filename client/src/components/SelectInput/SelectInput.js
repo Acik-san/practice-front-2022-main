@@ -35,7 +35,7 @@ const SelectInput = ({
   useLayoutEffect(() => {
     if (!initialValue && optionsArray) {
       setFieldValue(field.name, valueArray ? valueArray[0] : optionsArray[0]);
-    }
+    } // eslint-disable-next-line
   }, []);
 
   return (
@@ -65,7 +65,11 @@ const SelectInputWrapper = ({
           optionsArray={optionsArray}
           valueArray={valueArray}
         />
-        <ErrorMessage name={fieldProps.field.name} component="span" className={classes.warning} />
+        <ErrorMessage
+          name={fieldProps.field.name}
+          component="span"
+          className={classes.warning}
+        />
       </>
     )}
   </Field>
